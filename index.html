@@ -38,23 +38,23 @@ footer{padding:32px 0 48px;color:var(--muted);font:.9rem system-ui,sans-serif;bo
 <main class="wrap">
 <header>
 <h1>Oussama Gaied</h1>
-<p class="tag">Electrical &amp; Industrial Automation Engineer · Tunisia</p>
+<p class="tag">Electrical Engineer · Embedded Control &amp; Hardware Design · Tunisia</p>
 <a class="btn" href="#research">View my work</a><a class="btn alt" href="#contact">Get in touch</a>
 </header>
 
 <section id="about">
 <h2>About</h2>
-<p>I am an engineer in electrical engineering and industrial automation (ENIM, 2025). My academic work covers PLC-based control, electrical systems and PCB design, with an international research experience at the Université de Moncton through Mitacs Globalink. I am interested in automation, energy management and the impact of AI on engineering.</p>
+<p>I am an electrical engineer (ENIM, 2025) who works from the control algorithm down to custom hardware. During a Mitacs Globalink research internship at the Université de Moncton, I designed a distributed ESP32 heating control system and four custom electronic boards, and studied Model Predictive Control for residential energy savings. I am looking for a master's or PhD position in robotics and in electrical and electronic engineering, to apply embedded control and hardware design to autonomous systems.</p>
 </section>
 
 <section id="research">
 <h2>Research</h2>
 <div class="card">
 <h3>Minimization of the Energy Consumption of Electric Heating</h3>
-<div class="meta">Final-year thesis, ENIM · Mitacs Globalink Research Internship, Université de Moncton, Canada · Defended 12 September 2025</div>
+<div class="meta">Final-year thesis, ENIM · Mitacs Globalink Research Internship, Université de Moncton, Canada (May to August 2025) · Defended 12 September 2025</div>
 <p>Design of a smart thermostat system for residential electric heating that keeps thermal comfort while reducing energy use. The work combines a literature study of heating control methods, a distributed hardware and software architecture, and a Model Predictive Control (MPC) algorithm tested in MATLAB/Simulink. In simulation, the MPC anticipates thermal needs, modulates heating power and takes advantage of favorable electricity tariff periods.</p>
 <p class="meta">Supervisors: Prof. Mohsen Ghribi (Université de Moncton) and Mme Nesrine Majdoub (ENIM).</p>
-<ul class="chips" style="margin-bottom:12px"><li>Model Predictive Control</li><li>Smart thermostat</li><li>ESP32</li><li>MATLAB/Simulink</li><li>IoT</li><li>Energy efficiency</li></ul>
+<ul class="chips" style="margin-bottom:12px"><li>Model Predictive Control</li><li>Smart thermostat</li><li>ESP32</li><li>MATLAB/Simulink</li><li>IoT</li><li>Custom PCB design</li><li>Energy efficiency</li></ul>
 <a href="thesis.pdf">Full thesis (PDF, in French)</a>
 </div>
 </section>
@@ -63,37 +63,46 @@ footer{padding:32px 0 48px;color:var(--muted);font:.9rem system-ui,sans-serif;bo
 <h2>Projects</h2>
 <div class="card">
 <h3>Smart heating system: hardware and firmware</h3>
-<div class="meta">Part of the thesis · Embedded systems</div>
-<p>Distributed system of ESP32 thermostats with Nextion touchscreens, TRIAC-based power boards, environmental sensor modules and a central control panel. Modules communicate over local Wi-Fi using HTTP/JSON with mDNS discovery, and the enclosures were designed in Autodesk Fusion 360. Laboratory tests confirmed reliable data acquisition and transmission to the central panel. Running the MPC directly on the ESP32 is the next step.</p>
+<div class="meta">Mitacs internship and thesis · Embedded systems</div>
+<p>Distributed system of ESP32 thermostats with Nextion touchscreens, BME680 environmental sensors, TRIAC-based power boards and a central control panel. Modules communicate over local Wi-Fi using HTTP/JSON with mDNS discovery. Four custom boards were designed in Autodesk Fusion 360. Laboratory tests confirmed reliable data acquisition and transmission to the central panel.</p>
 </div>
 <div class="card">
-<h3>PCB design project (Actia Fablab, ENIM)</h3>
-<div class="meta">PCB design</div>
-<p>Describe the board, the design tools you used and the result. Add schematics or photos.</p>
+<h3>CAN data transmission PCB for an autonomous shuttle</h3>
+<div class="meta">Actia Engineering Services, Fablab ENIM · Jul to Sep 2024</div>
+<p>Designed a custom printed circuit board for the CAN data stage of an autonomous shuttle, using Altium Designer, LTspice and Saturn PCB Design for design and analysis.</p>
 </div>
 <div class="card">
-<h3>Electrical cabinet design</h3>
-<div class="meta">Wiring and commissioning</div>
-<p>Describe the cabinet, the standards followed and the tests performed.</p>
+<h3>Packaging machine automation</h3>
+<div class="meta">Bachelor's final project, Sancella · 2022</div>
+<p>New electrical schematics for the control cabinet, GRAFCET and GEMMA analysis of the control part, Siemens S7-1200 programming and an HMI on a TP1200 Comfort panel.</p>
+</div>
+<div class="card">
+<h3>Embedded control projects</h3>
+<div class="meta">Coursework</div>
+<p>Servo and stepper motor control with STM32, C/C++ and TouchGFX. Autonomous line-following robot with a PID controller on STM32. Wagon washing machine automation with S7-1200, WinCC SCADA and EPLAN. Machining station on S7-300 with Step 7 and GRAFCET. Serial data acquisition and supervision interface with Delphi and RS232. FPGA timer.</p>
 </div>
 </section>
 
 <section id="education">
 <h2>Education</h2>
-<div class="card"><h3>MEng, Electrical Engineering &amp; Industrial Automation</h3><div class="meta">École Nationale d'Ingénieurs de Monastir · 2025 · Distinction</div></div>
-<div class="card"><h3>BEng, Electrical Engineering</h3><div class="meta">ISET Mahdia · 2022 · Distinction</div></div>
+<div class="card"><h3>National Engineering Diploma, Electrical Engineering and Industrial Automation</h3><div class="meta">École Nationale d'Ingénieurs de Monastir (ENIM) · 2022 to 2025</div></div>
+<div class="card"><h3>Bachelor's degree, Electrical Engineering</h3><div class="meta">ISET Mahdia · 2019 to 2022</div></div>
 </section>
 
 <section id="skills">
 <h2>Skills</h2>
-<ul class="chips"><li>Siemens TIA Portal</li><li>SCL</li><li>PLC programming</li><li>Process control</li><li>PCB design</li><li>Cabinet design</li><li>MPC</li><li>ESP32</li><li>MATLAB/Simulink</li><li>Commissioning</li><li>Excel</li><li>SAP</li></ul>
+<div class="card"><h3>Control and optimization</h3><ul class="chips"><li>Model Predictive Control</li><li>PID</li><li>Real-time optimization</li><li>Servo and stepper control</li></ul></div>
+<div class="card"><h3>Electronics and circuit design</h3><ul class="chips"><li>Altium Designer</li><li>Fusion 360</li><li>Saturn PCB Design</li><li>LTspice</li></ul></div>
+<div class="card"><h3>Embedded systems and communication</h3><ul class="chips"><li>ESP32</li><li>STM32</li><li>FPGA</li><li>CAN</li><li>PROFINET</li><li>OPC-UA</li><li>Wi-Fi/BLE</li><li>RS232</li><li>Nextion</li><li>TouchGFX</li></ul></div>
+<div class="card"><h3>Industrial automation</h3><ul class="chips"><li>Siemens S7-1200 and S7-300</li><li>TIA Portal</li><li>Step 7</li><li>SCL</li><li>GRAFCET/GEMMA</li><li>WinCC SCADA</li><li>EPLAN</li></ul></div>
+<div class="card"><h3>Tools and programming</h3><ul class="chips"><li>C</li><li>C++</li><li>Python</li><li>MATLAB</li><li>LabVIEW</li></ul></div>
 <p class="meta" style="margin-top:14px">Languages: Arabic (native), French (C1), English (B2/C1)</p>
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
-<p>Open to research collaborations, PhD opportunities and engineering roles.</p>
-<p><a href="mailto:you@example.com">you@example.com</a> · <a href="#">LinkedIn</a> · <a href="#">GitHub</a> · <a href="#">CV (PDF)</a></p>
+<p>I am looking for a master's or PhD position in robotics and electrical and electronic engineering.</p>
+<p><a href="mailto:oussama.gaid@hotmail.fr">oussama.gaid@hotmail.fr</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV (PDF, in French)</a></p>
 </section>
 </main>
 
