@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Oussama Gaied</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-nav"><div class="wrap"><a class="brand" href="index.html">Oussama Gaied</a><nav class="links"><a href="index.html">Home</a><a href="projects.html" class=on>Projects</a><a href="research.html">Research</a><a href="about.html">About</a></nav></div></header>
+<main class="wrap">
+<h1>Projects</h1><p class="meta">Research, internship and academic work.</p><div class="grid"><a class="card" href="project-smart-heating.html"><img src="assets/heating-power-board-3d.jpg" alt="Smart heating power board" onerror="this.remove()"><div class="body"><h3>Smart Heating System (MPC)</h3><p>Distributed ESP32 thermostats, four custom PCBs and Model Predictive Control. Mitacs internship and thesis.</p></div></a><a class="card" href="project-can-pcb.html"><img src="assets/can-pcb.jpg" alt="CAN PCB" onerror="this.remove()"><div class="body"><h3>CAN PCB for an Autonomous Shuttle</h3><p>Custom board for the CAN data stage of an autonomous shuttle, designed in Altium Designer. Actia Fablab, ENIM.</p></div></a><a class="card" href="project-packaging.html"><img src="assets/packaging.jpg" alt="Packaging machine" onerror="this.remove()"><div class="body"><h3>Packaging Machine Automation</h3><p>Electrical design, GRAFCET and Siemens S7-1200 programming for a toilet paper packaging machine at Sancella.</p></div></a></div>
+<h2>Other coursework</h2>
+<div class="skills">
+<div class="box"><h3>Motor control with STM32</h3><p class="meta">Servo and stepper motors, C/C++, TouchGFX interface.</p></div>
+<div class="box"><h3>Line-following robot</h3><p class="meta">STM32 and a PID controller in C.</p></div>
+<div class="box"><h3>Wagon washing machine</h3><p class="meta">S7-1200, WinCC SCADA and EPLAN.</p></div>
+<div class="box"><h3>Machining station</h3><p class="meta">S7-300, Step 7, GRAFCET and HMI.</p></div>
+<div class="box"><h3>Data acquisition</h3><p class="meta">Delphi and RS232 supervision interface.</p></div>
+<div class="box"><h3>FPGA timer</h3><p class="meta">Design and implementation.</p></div>
+</div>
+</main>
+<footer><div class="wrap">© 2026 Oussama Gaied · <a href="mailto:oussama.gaid@hotmail.fr">Email</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV</a></div></footer>
+<div id="lb"><img alt=""></div>
+<script>
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gallery img').forEach(function(i){i.addEventListener('click',function(){li.src=i.src;lb.style.display='flex'})});
+lb.addEventListener('click',function(){lb.style.display='none'});
+</script>
+</body></html>

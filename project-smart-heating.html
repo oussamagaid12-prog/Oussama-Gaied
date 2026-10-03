@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Heating System | Oussama Gaied</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-nav"><div class="wrap"><a class="brand" href="index.html">Oussama Gaied</a><nav class="links"><a href="index.html">Home</a><a href="projects.html" class=on>Projects</a><a href="research.html">Research</a><a href="about.html">About</a></nav></div></header>
+<main class="wrap">
+<p class="crumbs"><a href="projects.html">Projects</a> / Smart Heating System</p>
+<h1>Smart Heating System with Model Predictive Control</h1>
+<p class="meta">Mitacs Globalink Research Internship, Université de Moncton · May to August 2025 · Supervisor: Prof. Mohsen Ghribi</p>
+<ul class="chips"><li>ESP32</li><li>MPC</li><li>MATLAB/Simulink</li><li>Fusion 360</li><li>Nextion</li><li>BME680</li><li>TRIAC</li></ul>
+<h2>Overview</h2>
+<p>A smart thermostat system for residential electric heating that aims to keep thermal comfort while reducing energy use. It is a distributed architecture of ESP32 thermostats, a central control panel, environmental sensor modules and TRIAC-based power boards, connected over local Wi-Fi with HTTP/JSON and mDNS discovery.</p>
+<h2>What I did</h2>
+<p>I designed the hardware and firmware, including four custom boards in Autodesk Fusion 360, and developed a Model Predictive Control algorithm tested in MATLAB/Simulink. In simulation, the MPC anticipates thermal needs, modulates heating power and takes advantage of favorable electricity tariff periods. Laboratory tests confirmed reliable data acquisition and transmission to the central panel. Running the MPC directly on the ESP32 is the next step.</p>
+<h2>Hardware design</h2>
+<div class="gallery"><figure><img src="assets/heating-power-board-3d.jpg" alt="TRIAC power board, 3D view" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>TRIAC power board, 3D view</figcaption></figure><figure><img src="assets/heating-power-board-routing.jpg" alt="Power board PCB routing" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Power board PCB routing</figcaption></figure><figure><img src="assets/heating-thermostat-3d.jpg" alt="ESP32 thermostat board, 3D view" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>ESP32 thermostat board, 3D view</figcaption></figure><figure><img src="assets/heating-thermostat-routing.jpg" alt="Thermostat PCB routing" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Thermostat PCB routing</figcaption></figure><figure><img src="assets/heating-control-panel-3d.jpg" alt="Central control panel board, 3D view" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Central control panel board, 3D view</figcaption></figure><figure><img src="assets/heating-bme680-board.jpg" alt="BME680 environmental sensor board" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>BME680 environmental sensor board</figcaption></figure><figure><img src="assets/heating-soldering.jpg" alt="Assembly and soldering of a prototype" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Assembly and soldering of a prototype</figcaption></figure></div>
+<h2>User interface</h2>
+<div class="gallery"><figure><img src="assets/heating-nextion-home.jpg" alt="Nextion touchscreen home screen" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Nextion touchscreen home screen</figcaption></figure><figure><img src="assets/heating-nextion-rooms.jpg" alt="Room selection and Wi-Fi setup screen" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Room selection and Wi-Fi setup screen</figcaption></figure></div>
+<h2>Demo</h2>
+<div class="gallery">
+<figure><video controls preload="none" playsinline><source src="assets/heating-demo.mp4" type="video/mp4" onerror="this.closest('figure').remove()"></video><figcaption>Prototype demo</figcaption></figure>
+</div>
+<p><a class="btn" href="thesis.pdf">Read the full thesis (PDF, in French)</a><a class="btn alt" href="research.html">Research summary</a></p>
+</main>
+<footer><div class="wrap">© 2026 Oussama Gaied · <a href="mailto:oussama.gaid@hotmail.fr">Email</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV</a></div></footer>
+<div id="lb"><img alt=""></div>
+<script>
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gallery img').forEach(function(i){i.addEventListener('click',function(){li.src=i.src;lb.style.display='flex'})});
+lb.addEventListener('click',function(){lb.style.display='none'});
+</script>
+</body></html>

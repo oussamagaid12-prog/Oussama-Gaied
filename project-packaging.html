@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Packaging Machine | Oussama Gaied</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-nav"><div class="wrap"><a class="brand" href="index.html">Oussama Gaied</a><nav class="links"><a href="index.html">Home</a><a href="projects.html" class=on>Projects</a><a href="research.html">Research</a><a href="about.html">About</a></nav></div></header>
+<main class="wrap">
+<p class="crumbs"><a href="projects.html">Projects</a> / Packaging Machine</p>
+<h1>Packaging Machine Automation</h1>
+<p class="meta">Bachelor's final project, Sancella, Monastir · March to June 2022</p>
+<ul class="chips"><li>Siemens S7-1200</li><li>TIA Portal</li><li>GRAFCET</li><li>GEMMA</li><li>EPLAN</li><li>HMI TP1200 Comfort</li></ul>
+<h2>Overview</h2>
+<p>Automation of a toilet paper packaging machine. I analyzed the operative part of the machine, designed new electrical schematics for the control cabinet, and studied the control part with the GRAFCET and GEMMA methodologies.</p>
+<h2>Implementation</h2>
+<p>The solution was programmed on a Siemens S7-1200 PLC, with an operator interface on a Siemens TP1200 Comfort panel.</p>
+<div class="gallery"><figure><img src="assets/packaging-schematic.jpg" alt="Electrical schematic" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Electrical schematic</figcaption></figure><figure><img src="assets/packaging-grafcet.jpg" alt="GRAFCET" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>GRAFCET</figcaption></figure><figure><img src="assets/packaging-hmi.jpg" alt="Operator interface" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Operator interface</figcaption></figure></div>
+</main>
+<footer><div class="wrap">© 2026 Oussama Gaied · <a href="mailto:oussama.gaid@hotmail.fr">Email</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV</a></div></footer>
+<div id="lb"><img alt=""></div>
+<script>
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gallery img').forEach(function(i){i.addEventListener('click',function(){li.src=i.src;lb.style.display='flex'})});
+lb.addEventListener('click',function(){lb.style.display='none'});
+</script>
+</body></html>

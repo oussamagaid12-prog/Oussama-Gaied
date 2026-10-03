@@ -1,111 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Oussama Gaied | Electrical & Automation Engineer</title>
-<style>
-:root{--bg:#fafaf7;--fg:#1c1f23;--muted:#5f6670;--accent:#1f5fbf;--card:#fff;--line:#e3e3dc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171a;--fg:#e8eaed;--muted:#9aa3ad;--accent:#6ea8ff;--card:#1b1f24;--line:#2b3138}}
-:root[data-theme="dark"]{--bg:#14171a;--fg:#e8eaed;--muted:#9aa3ad;--accent:#6ea8ff;--card:#1b1f24;--line:#2b3138}
-*{box-sizing:border-box}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
-nav .wrap{display:flex;gap:18px;overflow-x:auto;padding:12px 20px;font:15px system-ui,sans-serif}
-nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
-nav a:hover{color:var(--accent)}
-header{padding:56px 0 24px}
-h1{font-size:2.3rem;margin:0 0 6px;line-height:1.2}
-.tag{color:var(--muted);font:1.05rem system-ui,sans-serif;margin:0 0 16px}
-h2{font:600 1.35rem system-ui,sans-serif;margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid var(--accent)}
-section{padding:32px 0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:14px}
-.card h3{margin:0 0 4px;font:600 1.05rem system-ui,sans-serif}
-.meta{color:var(--muted);font:.9rem system-ui,sans-serif;margin-bottom:8px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0}
-.chips li{font:.85rem system-ui,sans-serif;border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:99px}
-a{color:var(--accent)}
-.btn{display:inline-block;font:600 .95rem system-ui,sans-serif;padding:9px 18px;border-radius:8px;background:var(--accent);color:var(--bg);text-decoration:none;margin-right:8px}
-.btn.alt{background:none;border:1px solid var(--accent);color:var(--accent)}
-footer{padding:32px 0 48px;color:var(--muted);font:.9rem system-ui,sans-serif;border-top:1px solid var(--line)}
-</style>
-</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Oussama Gaied</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<nav><div class="wrap"><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
-
+<header class="site-nav"><div class="wrap"><a class="brand" href="index.html">Oussama Gaied</a><nav class="links"><a href="index.html" class=on>Home</a><a href="projects.html">Projects</a><a href="research.html">Research</a><a href="about.html">About</a></nav></div></header>
 <main class="wrap">
-<header>
-<h1>Oussama Gaied</h1>
-<p class="tag">Electrical Engineer · Embedded Control &amp; Hardware Design · Tunisia</p>
-<a class="btn" href="#research">View my work</a><a class="btn alt" href="#contact">Get in touch</a>
-</header>
-
-<section id="about">
-<h2>About</h2>
-<p>I am an electrical engineer (ENIM, 2025) who works from the control algorithm down to custom hardware. During a Mitacs Globalink research internship at the Université de Moncton, I designed a distributed ESP32 heating control system and four custom electronic boards, and studied Model Predictive Control for residential energy savings. I am looking for a master's or PhD position in robotics and in electrical and electronic engineering, to apply embedded control and hardware design to autonomous systems.</p>
+<section class="hero">
+<img src="assets/profile.jpg" alt="Oussama Gaied" onerror="this.remove()">
+<div><h1>Hello, I'm Oussama Gaied</h1>
+<p class="tag">Electrical engineer · Embedded control and hardware design</p>
+<p>I design embedded systems from the control algorithm to custom hardware. I recently completed a Mitacs Globalink research internship at the Université de Moncton on energy-efficient electric heating, and I am looking for a master's or PhD position in robotics and in electrical and electronic engineering.</p>
+<a class="btn" href="projects.html">See my projects</a><a class="btn alt" href="cv.pdf">Download CV</a></div>
 </section>
-
-<section id="research">
+<h2>Selected projects</h2>
+<div class="grid"><a class="card" href="project-smart-heating.html"><img src="assets/heating-power-board-3d.jpg" alt="Smart heating power board" onerror="this.remove()"><div class="body"><h3>Smart Heating System (MPC)</h3><p>Distributed ESP32 thermostats, four custom PCBs and Model Predictive Control. Mitacs internship and thesis.</p></div></a><a class="card" href="project-can-pcb.html"><img src="assets/can-pcb.jpg" alt="CAN PCB" onerror="this.remove()"><div class="body"><h3>CAN PCB for an Autonomous Shuttle</h3><p>Custom board for the CAN data stage of an autonomous shuttle, designed in Altium Designer. Actia Fablab, ENIM.</p></div></a><a class="card" href="project-packaging.html"><img src="assets/packaging.jpg" alt="Packaging machine" onerror="this.remove()"><div class="body"><h3>Packaging Machine Automation</h3><p>Electrical design, GRAFCET and Siemens S7-1200 programming for a toilet paper packaging machine at Sancella.</p></div></a></div>
 <h2>Research</h2>
-<div class="card">
-<h3>Minimization of the Energy Consumption of Electric Heating</h3>
-<div class="meta">Final-year thesis, ENIM · Mitacs Globalink Research Internship, Université de Moncton, Canada (May to August 2025) · Defended 12 September 2025</div>
-<p>Design of a smart thermostat system for residential electric heating that keeps thermal comfort while reducing energy use. The work combines a literature study of heating control methods, a distributed hardware and software architecture, and a Model Predictive Control (MPC) algorithm tested in MATLAB/Simulink. In simulation, the MPC anticipates thermal needs, modulates heating power and takes advantage of favorable electricity tariff periods.</p>
-<p class="meta">Supervisors: Prof. Mohsen Ghribi (Université de Moncton) and Mme Nesrine Majdoub (ENIM).</p>
-<ul class="chips" style="margin-bottom:12px"><li>Model Predictive Control</li><li>Smart thermostat</li><li>ESP32</li><li>MATLAB/Simulink</li><li>IoT</li><li>Custom PCB design</li><li>Energy efficiency</li></ul>
-<a href="thesis.pdf">Full thesis (PDF, in French)</a>
-</div>
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-<div class="card">
-<h3>Smart heating system: hardware and firmware</h3>
-<div class="meta">Mitacs internship and thesis · Embedded systems</div>
-<p>Distributed system of ESP32 thermostats with Nextion touchscreens, BME680 environmental sensors, TRIAC-based power boards and a central control panel. Modules communicate over local Wi-Fi using HTTP/JSON with mDNS discovery. Four custom boards were designed in Autodesk Fusion 360. Laboratory tests confirmed reliable data acquisition and transmission to the central panel.</p>
-</div>
-<div class="card">
-<h3>CAN data transmission PCB for an autonomous shuttle</h3>
-<div class="meta">Actia Engineering Services, Fablab ENIM · Jul to Sep 2024</div>
-<p>Designed a custom printed circuit board for the CAN data stage of an autonomous shuttle, using Altium Designer, LTspice and Saturn PCB Design for design and analysis.</p>
-</div>
-<div class="card">
-<h3>Packaging machine automation</h3>
-<div class="meta">Bachelor's final project, Sancella · 2022</div>
-<p>New electrical schematics for the control cabinet, GRAFCET and GEMMA analysis of the control part, Siemens S7-1200 programming and an HMI on a TP1200 Comfort panel.</p>
-</div>
-<div class="card">
-<h3>Embedded control projects</h3>
-<div class="meta">Coursework</div>
-<p>Servo and stepper motor control with STM32, C/C++ and TouchGFX. Autonomous line-following robot with a PID controller on STM32. Wagon washing machine automation with S7-1200, WinCC SCADA and EPLAN. Machining station on S7-300 with Step 7 and GRAFCET. Serial data acquisition and supervision interface with Delphi and RS232. FPGA timer.</p>
-</div>
-</section>
-
-<section id="education">
-<h2>Education</h2>
-<div class="card"><h3>National Engineering Diploma, Electrical Engineering and Industrial Automation</h3><div class="meta">École Nationale d'Ingénieurs de Monastir (ENIM) · 2022 to 2025</div></div>
-<div class="card"><h3>Bachelor's degree, Electrical Engineering</h3><div class="meta">ISET Mahdia · 2019 to 2022</div></div>
-</section>
-
-<section id="skills">
-<h2>Skills</h2>
-<div class="card"><h3>Control and optimization</h3><ul class="chips"><li>Model Predictive Control</li><li>PID</li><li>Real-time optimization</li><li>Servo and stepper control</li></ul></div>
-<div class="card"><h3>Electronics and circuit design</h3><ul class="chips"><li>Altium Designer</li><li>Fusion 360</li><li>Saturn PCB Design</li><li>LTspice</li></ul></div>
-<div class="card"><h3>Embedded systems and communication</h3><ul class="chips"><li>ESP32</li><li>STM32</li><li>FPGA</li><li>CAN</li><li>PROFINET</li><li>OPC-UA</li><li>Wi-Fi/BLE</li><li>RS232</li><li>Nextion</li><li>TouchGFX</li></ul></div>
-<div class="card"><h3>Industrial automation</h3><ul class="chips"><li>Siemens S7-1200 and S7-300</li><li>TIA Portal</li><li>Step 7</li><li>SCL</li><li>GRAFCET/GEMMA</li><li>WinCC SCADA</li><li>EPLAN</li></ul></div>
-<div class="card"><h3>Tools and programming</h3><ul class="chips"><li>C</li><li>C++</li><li>Python</li><li>MATLAB</li><li>LabVIEW</li></ul></div>
-<p class="meta" style="margin-top:14px">Languages: Arabic (native), French (C1), English (B2/C1)</p>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>I am looking for a master's or PhD position in robotics and electrical and electronic engineering.</p>
-<p><a href="mailto:oussama.gaid@hotmail.fr">oussama.gaid@hotmail.fr</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV (PDF, in French)</a></p>
-</section>
+<a class="card" href="research.html"><div class="body"><h3>Minimization of the Energy Consumption of Electric Heating</h3><p class="meta">Mitacs Globalink, Université de Moncton · ENIM final-year thesis, 2025</p><p>Smart thermostat architecture and Model Predictive Control for residential electric heating.</p></div></a>
 </main>
-
-<footer><div class="wrap">© 2026 Oussama Gaied</div></footer>
-</body>
-</html>
+<footer><div class="wrap">© 2026 Oussama Gaied · <a href="mailto:oussama.gaid@hotmail.fr">Email</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV</a></div></footer>
+<div id="lb"><img alt=""></div>
+<script>
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gallery img').forEach(function(i){i.addEventListener('click',function(){li.src=i.src;lb.style.display='flex'})});
+lb.addEventListener('click',function(){lb.style.display='none'});
+</script>
+</body></html>
