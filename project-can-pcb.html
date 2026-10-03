@@ -5,14 +5,18 @@
 <header class="site-nav"><div class="wrap"><a class="brand" href="index.html">Oussama Gaied</a><nav class="links"><a href="index.html">Home</a><a href="projects.html" class=on>Projects</a><a href="research.html">Research</a><a href="about.html">About</a></nav></div></header>
 <main class="wrap">
 <p class="crumbs"><a href="projects.html">Projects</a> / CAN PCB</p>
-<h1>CAN Data Transmission PCB for an Autonomous Shuttle</h1>
-<p class="meta">Actia Engineering Services, Fablab ENIM · July to September 2024</p>
-<ul class="chips"><li>Altium Designer</li><li>LTspice</li><li>Saturn PCB Design</li><li>CAN</li></ul>
+<h1>CAN Data Transmission Stage for an Autonomous Shuttle</h1>
+<p class="meta">Actia Engineering Services, Fablab ENIM · July to September 2024 · Supervisor: Mohamed Chalghoum</p>
+<ul class="chips"><li>Altium Designer</li><li>LTspice</li><li>Saturn PCB Design</li><li>CAN / CAN FD</li><li>PCB design</li></ul>
 <h2>Overview</h2>
-<p>Design of a custom printed circuit board for the CAN data transmission stage of an autonomous shuttle, so that embedded systems on the vehicle can communicate reliably and efficiently.</p>
-<h2>Tools and method</h2>
-<p>I used Altium Designer for schematic capture and layout, and LTspice and Saturn PCB Design to analyze the circuit.</p>
-<div class="gallery"><figure><img src="assets/can-pcb-schematic.jpg" alt="Schematic" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Schematic</figcaption></figure><figure><img src="assets/can-pcb-layout.jpg" alt="PCB layout" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>PCB layout</figcaption></figure><figure><img src="assets/can-pcb-3d.jpg" alt="3D view" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>3D view</figcaption></figure></div>
+<p>In an autonomous shuttle, the CAN bus lets the electronic control units exchange data between sensors, controllers and actuators. This project is the design of a robust CAN transceiver board for that data link, from the first schematic to a routed PCB.</p>
+<h2>Design</h2>
+<p>The board is built around the TCAN3403-Q1 transceiver from Texas Instruments, an automotive-grade part that supports CAN FD data rates up to 8 Mbps. Between the transceiver and the bus, the circuit includes a common-mode choke to filter noise on the CAN lines, ESD protection diodes, and a 120 ohm termination. I created the schematic symbol and the SOIC-8 footprint for the transceiver in Altium, organized the schematic in a hierarchical main sheet and transceiver sheet, added test points on the signal lines, then routed the board and reviewed it in 3D.</p>
+<h2>Schematic and layout</h2>
+<div class="gallery"><figure><img src="assets/can-pcb-schematic.jpg" alt="Transceiver sheet: TCAN3403-Q1, common-mode choke, ESD protection and termination" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Transceiver sheet: TCAN3403-Q1, common-mode choke, ESD protection and termination</figcaption></figure><figure><img src="assets/can-pcb-layout.jpg" alt="PCB layout in Altium Designer" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>PCB layout in Altium Designer</figcaption></figure><figure><img src="assets/can-pcb-3d.jpg" alt="3D view of the board" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>3D view of the board</figcaption></figure></div>
+<h2>What I learned</h2>
+<p>This project gave me hands-on experience with the full Altium Designer flow (library creation, schematic capture, PCB layout and 3D review) and a solid understanding of the CAN physical layer. It prepared me for the larger hardware work I did later in my Mitacs internship.</p>
+<p><a class="btn alt" href="project-smart-heating.html">Next: Smart Heating System</a></p>
 </main>
 <footer><div class="wrap">© 2026 Oussama Gaied · <a href="mailto:oussama.gaid@hotmail.fr">Email</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV</a></div></footer>
 <div id="lb"><img alt=""></div>

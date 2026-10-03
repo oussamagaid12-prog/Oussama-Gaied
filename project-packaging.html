@@ -4,15 +4,19 @@
 <body>
 <header class="site-nav"><div class="wrap"><a class="brand" href="index.html">Oussama Gaied</a><nav class="links"><a href="index.html">Home</a><a href="projects.html" class=on>Projects</a><a href="research.html">Research</a><a href="about.html">About</a></nav></div></header>
 <main class="wrap">
-<p class="crumbs"><a href="projects.html">Projects</a> / Packaging Machine</p>
-<h1>Packaging Machine Automation</h1>
-<p class="meta">Bachelor's final project, Sancella, Monastir · March to June 2022</p>
-<ul class="chips"><li>Siemens S7-1200</li><li>TIA Portal</li><li>GRAFCET</li><li>GEMMA</li><li>EPLAN</li><li>HMI TP1200 Comfort</li></ul>
-<h2>Overview</h2>
-<p>Automation of a toilet paper packaging machine. I analyzed the operative part of the machine, designed new electrical schematics for the control cabinet, and studied the control part with the GRAFCET and GEMMA methodologies.</p>
-<h2>Implementation</h2>
-<p>The solution was programmed on a Siemens S7-1200 PLC, with an operator interface on a Siemens TP1200 Comfort panel.</p>
-<div class="gallery"><figure><img src="assets/packaging-schematic.jpg" alt="Electrical schematic" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Electrical schematic</figcaption></figure><figure><img src="assets/packaging-grafcet.jpg" alt="GRAFCET" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>GRAFCET</figcaption></figure><figure><img src="assets/packaging-hmi.jpg" alt="Operator interface" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Operator interface</figcaption></figure></div>
+<p class="crumbs"><a href="projects.html">Projects</a> / PAC110 Packaging Machine</p>
+<h1>Renewal of the PAC110 Packaging Machine</h1>
+<p class="meta">Bachelor's final project, ISET Mahdia · Sancella, Monastir · March to June 2022 · Defended 23 June 2022 · Joint project with Seif Eddine Ben Belgacem</p>
+<ul class="chips"><li>Siemens S7-1200</li><li>TIA Portal</li><li>GRAFCET</li><li>GEMMA</li><li>EPLAN</li><li>HMI TP1200 Comfort</li><li>PLCSIM</li></ul>
+<h2>Context</h2>
+<p>The PAC110 machine wraps toilet paper rolls into packs on a production line at Sancella. It was controlled by an old Siemens S5 PLC whose spare parts are no longer sold, and the machine could not be extended to follow product changes. The goal was to migrate its control to a Siemens S7-1200.</p>
+<h2>What we did</h2>
+<p>We studied the operative part of the machine and its five subsystems (supply, separator, wrapping group, welding belts and export), then drew new electrical schematics for the control cabinet in EPLAN. The behavior was specified with GEMMA and GRAFCET, with a safety GRAFCET, a conduct GRAFCET for the run and stop modes, and GRAFCETs for normal production and manual operation. We then derived the equations, programmed the solution in ladder logic in TIA Portal, tested it in PLCSIM, and built a supervision application on a TP1200 Comfort panel with three views: root, control and synoptic.</p>
+<h2>The machine and the design</h2>
+<div class="gallery"><figure><img src="assets/packaging-machine.jpg" alt="The PAC110 packaging machine" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>The PAC110 packaging machine</figcaption></figure><figure><img src="assets/packaging-schematic.jpg" alt="Control cabinet schematic (EPLAN)" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Control cabinet schematic (EPLAN)</figcaption></figure><figure><img src="assets/packaging-gemma.jpg" alt="GEMMA of the machine" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>GEMMA of the machine</figcaption></figure><figure><img src="assets/packaging-grafcet.jpg" alt="GRAFCET (extract)" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>GRAFCET (extract)</figcaption></figure></div>
+<h2>Supervision</h2>
+<div class="gallery"><figure><img src="assets/packaging-hmi.jpg" alt="Root view" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Root view</figcaption></figure><figure><img src="assets/packaging-hmi-control.jpg" alt="Control view" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Control view</figcaption></figure><figure><img src="assets/packaging-hmi-synoptic.jpg" alt="Synoptic view of the machine" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Synoptic view of the machine</figcaption></figure></div>
+<p><a class="btn alt" href="project-can-pcb.html">Next: CAN PCB</a></p>
 </main>
 <footer><div class="wrap">© 2026 Oussama Gaied · <a href="mailto:oussama.gaid@hotmail.fr">Email</a> · <a href="https://www.linkedin.com/in/gaid-oussama">LinkedIn</a> · <a href="cv.pdf">CV</a></div></footer>
 <div id="lb"><img alt=""></div>
